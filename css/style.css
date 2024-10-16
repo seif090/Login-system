@@ -1,0 +1,178 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500;600;700&display=swap');
+:root {
+  --backgroung-color: #24353f;
+  --main-color: #17a2b8;
+}
+* {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  -o-box-sizing: border-box;
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+body {
+  background-color: var(--backgroung-color);
+  height: 100vh;
+}
+body,
+button {
+  font-family: 'Open Sans', sans-serif;
+}
+ul,
+ol {
+  padding-right: 0;
+  padding-left: 0;
+  margin: 0;
+  list-style: none;
+}
+a {
+  text-decoration: none;
+}
+.container {
+  padding-left: 15px;
+  padding-right: 15px;
+  margin-left: auto;
+  margin-right: auto;
+}
+@media (min-width: 576px) {
+  .container {
+    width: 540px;
+  }
+}
+@media (min-width: 768px) {
+  .container {
+    width: 720px;
+  }
+}
+@media (min-width: 992px) {
+  .container {
+    width: 960px;
+  }
+}
+
+/* ========== Start LogIn and Register Page Styles ================ */
+.login,
+.register {
+  padding-top: 30px;
+}
+.login .login-content,
+.register .register-content {
+  background-color: var(--backgroung-color);
+  padding: 20px;
+  box-shadow: 0 0 24px rgba(0, 0, 0, 0.15);
+  border-radius: 4px;
+  text-align: center;
+}
+.login .login-content h1,
+.register .register-content h1 {
+  color: var(--main-color);
+  font-weight: normal;
+}
+.login .login-content form,
+.register .register-content form {
+  margin-top: 15px;
+  margin-bottom: 15px;
+}
+.login .login-content form input,
+.register .register-content form input {
+  display: block;
+  width: 85%;
+  height: 35px;
+  padding-left: 10px;
+  margin: auto;
+  outline: none;
+  border: 1px solid #ced4da;
+  background-color: transparent;
+  border-radius: 4px;
+  color: #fff;
+}
+::placeholder {
+  color: #ccc;
+}
+.login .login-content form input:nth-of-type(2),
+.register .register-content form input:nth-of-type(2),
+.register .register-content form input:nth-of-type(3) {
+  margin-top: 15px;
+  margin-bottom: 15px;
+}
+.login .login-content form p.alert,
+.register .register-content form p.alert,
+.login .login-content form p.incorrect,
+.register .register-content form p.exist {
+  color: #f00;
+  margin-bottom: 15px;
+  font-size: 14px;
+  font-weight: bold;
+  display: none;
+}
+.register .register-content form p.success {
+  color: #0f0;
+  margin-bottom: 15px;
+  font-size: 14px;
+  font-weight: bold;
+  display: none;
+}
+.show {
+  display: block !important;
+}
+.login .login-content form input[type='submit'],
+.register .register-content form input[type='submit'] {
+  border: 1px solid var(--main-color);
+  color: var(--main-color);
+  font-size: 14px;
+  font-weight: 600;
+  cursor: pointer;
+}
+.login .login-content p,
+.login .login-content p a,
+.register .register-content p,
+.register .register-content p a {
+  color: #fff;
+}
+.login .login-content p a:hover,
+.register .register-content p a:hover {
+  text-decoration: underline;
+}
+/* ========== End LogIn and Register Page Styles =================== */
+
+/* Start Home Styles */
+.home {
+  height: 100vh;
+}
+.home nav {
+  background-color: var(--backgroung-color);
+  box-shadow: 0 0 24px rgba(0, 0, 0, 0.15);
+  padding: 20px;
+}
+.home nav .container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.home nav .logo a {
+  color: #fff;
+  text-transform: uppercase;
+  font-size: 20px;
+}
+.home nav .logout a {
+  padding: 5px 10px;
+  border: 1px solid #ffc107;
+  border-radius: 3px;
+  color: #fff;
+  transition: background-color 0.5s ease-in-out;
+}
+.home nav .logout a:hover {
+  background-color: #ffc107;
+}
+.home .welcome-message {
+  text-align: center;
+  color: var(--main-color);
+  background-color: var(--backgroung-color);
+  box-shadow: 0 0 24px rgba(0, 0, 0, 0.15);
+  width: 50%;
+  padding: 30px;
+  margin: 150px auto;
+  font-weight: normal;
+}
+/* End Home Styles */
